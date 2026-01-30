@@ -1,4 +1,4 @@
-// 统一入口
+// 统一入口：兼容 Cloudflare Workers 和 Pages Functions
 export default {
   async fetch(request, env, ctx) {
     if (env && env.KV && typeof globalThis.KV === 'undefined') {
@@ -8,6 +8,7 @@ export default {
   }
 }
 
+// 常量配置
 const CORS_HEADERS = {
   'Access-Control-Allow-Origin': '*',
   'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
@@ -15,9 +16,12 @@ const CORS_HEADERS = {
   'Access-Control-Max-Age': '86400',
 }
 
-const EXCLUDE_HEADERS = new Set(['content-encoding', 'content-length', 'transfer-encoding', 'connection', 'keep-alive', 'set-cookie', 'set-cookie2'])
+const EXCLUDE_HEADERS = new Set([
+  'content-encoding', 'content-length', 'transfer-encoding',
+  'connection', 'keep-alive', 'set-cookie', 'set-cookie2'
+])
 
-// 数据源配置：增加 name 字段以适配 UI
+// 更新后的 JSON 数据源定义
 const JSON_SOURCES = {
   'lite': {
     name: '精简版 (Lite)',
@@ -33,32 +37,54 @@ const JSON_SOURCES = {
   }
 }
 
-// baseUrl 字段前缀替换
-function addOrReplacePrefix(obj, newPrefix) {
+const FORMAT_CONFIG = {
+  '0': { proxy: false },
+  'raw': { proxy: false },
+  '1': { proxy: true },
+  'proxy': { proxy: true }
+}
+
+// 🔑 域名标识提取器
+function extractSourceId(apiUrl) {
+  try {
+    const url = new URL(apiUrl)
+    const hostname = url.hostname
+    const parts = hostname.split('.')
+    if (parts.length >= 3 && (parts[0] === 'caiji' || parts[0] === 'api' || parts[0] === 'cj' || parts[0] === 'www')) {
+      return parts[parts.length - 2].toLowerCase().replace(/[^a-z0-9]/g, '')
+    }
+    let name = parts[0].toLowerCase()
+    name = name.replace(/zyapi$/, '').replace(/zy$/, '').replace(/api$/, '')
+    return name.replace(/[^a-z0-9]/g, '') || 'source'
+  } catch {
+    return 'source' + Math.random().toString(36).substr(2, 6)
+  }
+}
+
+// 🛠️ 处理新 JSON 结构 (仅适配 baseUrl 字段)
+function processJsonStructure(obj, newPrefix) {
   if (typeof obj !== 'object' || obj === null) return obj
-  if (Array.isArray(obj)) return obj.map(item => addOrReplacePrefix(item, newPrefix))
-  
+  if (Array.isArray(obj)) return obj.map(item => processJsonStructure(item, newPrefix))
   const newObj = {}
   for (const key in obj) {
     if (key === 'baseUrl' && typeof obj[key] === 'string') {
       let apiUrl = obj[key]
-      
-      // 清除旧的代理前缀（如果有）
       const urlIndex = apiUrl.indexOf('?url=')
       if (urlIndex !== -1) apiUrl = apiUrl.slice(urlIndex + 5)
-      
-      // 直接拼接，不使用 encodeURIComponent
       if (!apiUrl.startsWith(newPrefix)) {
-        apiUrl = newPrefix + apiUrl
+        const sourceId = extractSourceId(apiUrl)
+        const baseUrlPath = newPrefix.replace(/\/?\?url=$/, '') 
+        apiUrl = `${baseUrlPath}/p/${sourceId}?url=${apiUrl}`
       }
       newObj[key] = apiUrl
     } else {
-      newObj[key] = addOrReplacePrefix(obj[key], newPrefix)
+      newObj[key] = processJsonStructure(obj[key], newPrefix)
     }
   }
   return newObj
 }
 
+// KV 缓存逻辑
 async function getCachedJSON(url) {
   const kvAvailable = typeof KV !== 'undefined' && KV && typeof KV.get === 'function'
   if (kvAvailable) {
@@ -79,43 +105,39 @@ async function getCachedJSON(url) {
   }
 }
 
+// 主请求处理
 async function handleRequest(request) {
   if (request.method === 'OPTIONS') return new Response(null, { status: 204, headers: CORS_HEADERS })
-  
   const reqUrl = new URL(request.url)
   const pathname = reqUrl.pathname
   const targetUrlParam = reqUrl.searchParams.get('url')
   const formatParam = reqUrl.searchParams.get('format')
-  const sourceParam = reqUrl.searchParams.get('source')
   const prefixParam = reqUrl.searchParams.get('prefix')
-
+  const sourceParam = reqUrl.searchParams.get('source')
   const currentOrigin = reqUrl.origin
   const defaultPrefix = currentOrigin + '/?url='
 
   if (pathname === '/health') return new Response('OK', { status: 200, headers: CORS_HEADERS })
-  if (targetUrlParam) return handleProxyRequest(request, targetUrlParam, currentOrigin)
-
-  if (formatParam !== null) {
-    try {
-      const sourceConfig = JSON_SOURCES[sourceParam] || JSON_SOURCES['full']
-      const data = await getCachedJSON(sourceConfig.url)
-      const isProxy = formatParam === '1' || formatParam === 'proxy'
-      const newData = isProxy ? addOrReplacePrefix(data, prefixParam || defaultPrefix) : data
-      return new Response(JSON.stringify(newData), {
-        headers: { 'Content-Type': 'application/json;charset=UTF-8', ...CORS_HEADERS },
-      })
-    } catch (err) {
-      return new Response(JSON.stringify({ error: err.message }), { status: 500, headers: CORS_HEADERS })
-    }
+  if ((pathname.startsWith('/p/') || pathname === '/') && targetUrlParam) {
+    return handleProxyRequest(request, targetUrlParam, currentOrigin)
   }
-
+  if (formatParam !== null) return handleFormatRequest(formatParam, sourceParam, prefixParam, defaultPrefix)
   return handleHomePage(currentOrigin, defaultPrefix)
 }
 
+// 代理请求转发
 async function handleProxyRequest(request, targetUrlParam, currentOrigin) {
-  if (targetUrlParam.startsWith(currentOrigin)) return new Response('Loop detected', { status: 400 })
+  if (targetUrlParam.startsWith(currentOrigin)) return errorResponse('Loop detected', {}, 400)
+  let fullTargetUrl = targetUrlParam
+  const urlMatch = request.url.match(/[?&]url=([^&]+)/)
+  if (urlMatch) fullTargetUrl = decodeURIComponent(urlMatch[1])
+  const reqUrl = new URL(request.url)
+  const extraParams = new URLSearchParams()
+  for (const [key, value] of reqUrl.searchParams) { if (key !== 'url') extraParams.append(key, value) }
   try {
-    const proxyRequest = new Request(targetUrlParam, {
+    const targetURL = new URL(fullTargetUrl)
+    for (const [key, value] of extraParams) { targetURL.searchParams.append(key, value) }
+    const proxyRequest = new Request(targetURL.toString(), {
       method: request.method,
       headers: request.headers,
       body: request.method !== 'GET' && request.method !== 'HEAD' ? await request.arrayBuffer() : undefined,
@@ -127,11 +149,27 @@ async function handleProxyRequest(request, targetUrlParam, currentOrigin) {
     }
     return new Response(response.body, { status: response.status, headers: responseHeaders })
   } catch (err) {
-    return new Response(err.message, { status: 502 })
+    return errorResponse('Proxy Error', { message: err.message }, 502)
   }
 }
 
-// 你的现代 UI 处理函数
+// JSON 格式化输出
+async function handleFormatRequest(formatParam, sourceParam, prefixParam, defaultPrefix) {
+  try {
+    const config = FORMAT_CONFIG[formatParam]
+    if (!config) return errorResponse('Invalid format', { format: formatParam }, 400)
+    const sourceConfig = JSON_SOURCES[sourceParam] || JSON_SOURCES['full']
+    const data = await getCachedJSON(sourceConfig.url)
+    const newData = config.proxy ? processJsonStructure(data, prefixParam || defaultPrefix) : data
+    return new Response(JSON.stringify(newData), {
+      headers: { 'Content-Type': 'application/json;charset=UTF-8', ...CORS_HEADERS },
+    })
+  } catch (err) {
+    return errorResponse(err.message, {}, 500)
+  }
+}
+
+// ---------- 首页 UI (使用您的新模板) ----------
 async function handleHomePage(currentOrigin, defaultPrefix) {
   const html = `<!DOCTYPE html>
 <html lang="zh-CN">
@@ -166,7 +204,7 @@ async function handleHomePage(currentOrigin, defaultPrefix) {
   <div class="card">
     <h2>🚀 基础代理用法</h2>
     <p>直接在 URL 后附加目标地址：</p>
-    <pre><code>${defaultPrefix}https://example.com/api</code><button class="btn-copy" onclick="copyText(this)">复制</button></pre>
+    <pre><code>\${defaultPrefix}https://example.com/api</code><button class="btn-copy" onclick="copyText(this)">复制</button></pre>
   </div>
 
   <div class="card">
@@ -180,16 +218,16 @@ async function handleHomePage(currentOrigin, defaultPrefix) {
         </tr>
       </thead>
       <tbody>
-        ${Object.entries(JSON_SOURCES).map(([key, item]) => `
+        \${Object.entries(JSON_SOURCES).map(([key, item]) => \`
         <tr>
-          <td><span class="source-name">${item.name}</span><code>${key}</code></td>
+          <td><span class="source-name">\${item.name}</span><code>\${key}</code></td>
           <td>
-            <div class="url-text" onclick="quickCopy('${currentOrigin}/?format=0&source=${key}')">点击复制原始链接</div>
+            <div class="url-text" onclick="quickCopy('\${currentOrigin}/?format=0&source=\${key}')">点击复制原始链接</div>
           </td>
           <td>
-            <div class="url-text" onclick="quickCopy('${currentOrigin}/?format=1&source=${key}')">点击复制中转链接</div>
+            <div class="url-text" onclick="quickCopy('\${currentOrigin}/?format=1&source=\${key}')">点击复制中转链接</div>
           </td>
-        </tr>`).join('')}
+        </tr>\`).join('')}
       </tbody>
     </table>
   </div>
@@ -197,27 +235,18 @@ async function handleHomePage(currentOrigin, defaultPrefix) {
   <script>
     async function universalCopy(text) {
       if (navigator.clipboard && window.isSecureContext) {
-        try {
-          await navigator.clipboard.writeText(text);
-          return true;
-        } catch (e) {}
+        try { await navigator.clipboard.writeText(text); return true; } catch (e) {}
       }
       const textArea = document.createElement("textarea");
       textArea.value = text;
-      textArea.style.position = "fixed";
-      textArea.style.left = "-9999px";
-      textArea.style.top = "0";
+      textArea.style.position = "fixed"; textArea.style.left = "-9999px"; textArea.style.top = "0";
       document.body.appendChild(textArea);
-      textArea.focus();
-      textArea.select();
+      textArea.focus(); textArea.select();
       try {
         const success = document.execCommand('copy');
         document.body.removeChild(textArea);
         return success;
-      } catch (e) {
-        document.body.removeChild(textArea);
-        return false;
-      }
+      } catch (e) { document.body.removeChild(textArea); return false; }
     }
 
     async function copyText(btn) {
@@ -226,24 +255,27 @@ async function handleHomePage(currentOrigin, defaultPrefix) {
       if (ok) {
         btn.innerText = '已复制';
         setTimeout(() => btn.innerText = '复制', 1500);
-      } else {
-        prompt("请手动复制链接：", code);
-      }
+      } else { prompt("请手动复制链接：", code); }
     }
 
     async function quickCopy(url) {
       const ok = await universalCopy(url);
-      if (ok) {
-        alert('链接已成功复制到剪贴板！');
-      } else {
-        prompt("请手动复制链接：", url);
-      }
+      if (ok) { alert('链接已成功复制到剪贴板！'); } 
+      else { prompt("请手动复制链接：", url); }
     }
   </script>
 </body>
 </html>`
 
-  return new Response(html, { 
-    headers: { 'Content-Type': 'text/html; charset=utf-8', ...CORS_HEADERS } 
+  return new Response(html, {
+    status: 200,
+    headers: { 'Content-Type': 'text/html; charset=utf-8', ...CORS_HEADERS }
+  })
+}
+
+function errorResponse(error, data = {}, status = 400) {
+  return new Response(JSON.stringify({ error, ...data }), {
+    status,
+    headers: { 'Content-Type': 'application/json; charset=utf-8', ...CORS_HEADERS }
   })
 }
