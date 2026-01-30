@@ -68,7 +68,7 @@ jobs:
           const bs58 = require('bs58');
 
           const files = [
-            { input: 'LunaTV-config.json', output: 'LunaTV-config.txt' },
+            { input: 'KVideo-config.json', output: 'KVideo-config.txt' },
             { input: 'jingjian.json', output: 'jingjian.txt' },
             { input: 'jin18.json', output: 'jin18.txt' }
           ];
