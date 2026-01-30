@@ -89,7 +89,7 @@ const queueRun = (tasks, limit) => {
 
 // === 主逻辑 ===
 (async () => {
-  console.log("⏳ 正在按照原版格式进行健康检测...");
+  console.log("⏳ 正在进行健康检测...");
 
   const tasks = apiEntries.map(({ name, api, disabled }) => async () => {
     if (disabled) return { name, api, success: false, searchStatus: "禁用" };
@@ -102,7 +102,7 @@ const queueRun = (tasks, limit) => {
   history.push({ date: new Date().toISOString().slice(0, 10), results: todayResults });
   if (history.length > MAX_DAYS) history = history.slice(-MAX_DAYS);
 
-  // === 统计和生成报告 (保持原样) ===
+  // === 统计和生成报告===
   const stats = {};
   for (const { name, api, detail, disabled } of apiEntries) {
     stats[api] = { name, api, detail, disabled, ok: 0, fail: 0, streak: 0, trend: "", searchStatus: "-", status: "❌" };
