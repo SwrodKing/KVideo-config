@@ -2,11 +2,10 @@ name: JSON Build & API Check
 
 on:
   schedule:
-    - cron: "0 17 * * *"  # 每天北京时间凌晨 1 点运行
+    - cron: "0 17 * * *" # 北京时间凌晨1点
   push:
     paths:
       - 'KVideo-config.json'
-      - 'check_api.js'
   workflow_dispatch:
     inputs:
       api_name:
@@ -20,34 +19,25 @@ jobs:
       contents: write
 
     steps:
-      - name: 检出代码
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: 设置 Node.js 环境
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 18
-          # cache: 'npm'
 
-      - name: 安装必备依赖
+      - name: Install dependencies
         run: npm install axios
 
-      - name: 执行自动化检测
+      - name: Run Check Script
         run: |
           SEARCH_KEY="${{ github.event.inputs.api_name || '斗罗大陆' }}"
           node check_api.js "$SEARCH_KEY"
 
-      - name: 提交并同步结果
+      - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          
           git add adult.json lite.json report.md
-          
-          # 仅在文件确实有变化时才提交
-          if git diff --staged --quiet; then
-            echo "数据无变化，跳过提交。"
-          else
-            git commit -m "chore: 自动化更新 API 状态 [$(date +'%Y-%m-%d %H:%M')]"
-            git push
-          fi
+          git commit -m "chore: 自动更新接口状态 [$(date +'%Y-%m-%d %H:%M')]" || echo "No changes"
+          git push
