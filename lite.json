@@ -197,6 +197,6 @@
     "baseUrl": "https://api.ukuapi88.com/api.php/provide/vod",
     "group": "normal",
     "enabled": true,
-    "priority": 10
+    "priority": 5
   }
 ]
