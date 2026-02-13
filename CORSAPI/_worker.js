@@ -22,16 +22,16 @@ const EXCLUDE_HEADERS = new Set([
 ]); // 代理时需剥离的响应头
 
 const JSON_SOURCES = {
-  '健康过滤版 (normal)': {
-    name: 'lite',
+  'lite': {
+    name: '健康过滤版 (normal)',
     url: 'https://raw.githubusercontent.com/puppet680/KVideo-config/refs/heads/main/lite.json'
   },
-  '完整过滤版 (normal+premium)': {
-    name: 'adult',
+  'adult': {
+    name: '完整过滤版 (normal+premium)',
     url: 'https://raw.githubusercontent.com/puppet680/KVideo-config/refs/heads/main/adult.json'
   },
-  '完整版 (Full)': {
-    name: 'Full',
+  'full': {
+    name: '完整版 (Full)',
     url: 'https://raw.githubusercontent.com/puppet680/KVideo-config/refs/heads/main/KVideo-config.json'
   }
 };
