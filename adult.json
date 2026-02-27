@@ -552,22 +552,6 @@
     "priority": 5
   },
   {
-    "id": "feifan",
-    "name": "非凡资源",
-    "baseUrl": "http://ffzy5.tv/api.php/provide/vod",
-    "group": "normal",
-    "enabled": true,
-    "priority": 10
-  },
-  {
-    "id": "wangwang",
-    "name": "旺旺资源",
-    "baseUrl": "https://wwzy.tv/api.php/provide/vod",
-    "group": "normal",
-    "enabled": true,
-    "priority": 10
-  },
-  {
     "id": "jinying",
     "name": "金鹰点播",
     "baseUrl": "https://jinyingzy.com/api.php/provide/vod",
@@ -584,84 +568,112 @@
     "priority": 10
   },
   {
+    "id": "feifan",
+    "name": "非凡资源",
+    "baseUrl": "http://ffzy5.tv/api.php/provide/vod",
+    "group": "normal",
+    "enabled": false,
+    "priority": 101,
+    "_comment": "超时/宕机"
+  },
+  {
+    "id": "wangwang",
+    "name": "旺旺资源",
+    "baseUrl": "https://wwzy.tv/api.php/provide/vod",
+    "group": "normal",
+    "enabled": false,
+    "priority": 101,
+    "_comment": "搜索无结果"
+  },
+  {
     "id": "youyou",
     "name": "🔞优优资源",
     "baseUrl": "https://www.yyzywcj.com/api.php/provide/vod",
     "group": "premium",
-    "enabled": true,
-    "priority": 10
+    "enabled": false,
+    "priority": 101,
+    "_comment": "搜索无结果"
   },
   {
     "id": "danaizi",
     "name": "🔞-大奶子-",
     "baseUrl": "https://apidanaizi.com/api.php/provide/vod",
     "group": "premium",
-    "enabled": true,
-    "priority": 10
+    "enabled": false,
+    "priority": 101,
+    "_comment": "搜索无结果"
   },
   {
     "id": "doudou",
     "name": "🔞豆豆资源",
     "baseUrl": "https://api.douapi.cc/api.php/provide/vod",
     "group": "premium",
-    "enabled": true,
-    "priority": 10
+    "enabled": false,
+    "priority": 101,
+    "_comment": "搜索无结果"
   },
   {
     "id": "msnii",
     "name": "美少女资源站",
     "baseUrl": "https://www.msnii.com/api/json.php",
     "group": "premium",
-    "enabled": true,
-    "priority": 10
+    "enabled": false,
+    "priority": 101,
+    "_comment": "搜索无结果"
   },
   {
     "id": "kxgav",
     "name": "白嫖资源站",
     "baseUrl": "https://www.kxgav.com/api/json.php",
     "group": "premium",
-    "enabled": true,
-    "priority": 10
+    "enabled": false,
+    "priority": 101,
+    "_comment": "搜索无结果"
   },
   {
     "id": "wangwangapi",
     "name": "旺旺API",
     "baseUrl": "https://api.wwzy.tv/api.php/provide/vod",
     "group": "normal",
-    "enabled": true,
-    "priority": 10
+    "enabled": false,
+    "priority": 101,
+    "_comment": "搜索无结果"
   },
   {
     "id": "yinghua",
     "name": "樱花资源",
     "baseUrl": "https://m3u8.apiyhzy.com/api.php/provide/vod",
     "group": "normal",
-    "enabled": true,
-    "priority": 10
+    "enabled": false,
+    "priority": 101,
+    "_comment": "超时/宕机"
   },
   {
     "id": "ck",
     "name": "CK",
     "baseUrl": "https://www.ckzy1.com/api.php/provide/vod",
     "group": "premium",
-    "enabled": true,
-    "priority": 10
+    "enabled": false,
+    "priority": 101,
+    "_comment": "搜索无结果"
   },
   {
     "id": "xrbsp",
     "name": "淫水机资源站",
     "baseUrl": "https://www.xrbsp.com/api/json.php",
     "group": "premium",
-    "enabled": true,
-    "priority": 10
+    "enabled": false,
+    "priority": 101,
+    "_comment": "搜索无结果"
   },
   {
     "id": "xibao",
     "name": "细胞采集",
     "baseUrl": "https://www.xxibaozyw.com/api.php/provide/vod",
     "group": "premium",
-    "enabled": true,
-    "priority": 10
+    "enabled": false,
+    "priority": 101,
+    "_comment": "搜索无结果"
   },
   {
     "id": "tianya",
@@ -669,7 +681,7 @@
     "baseUrl": "https://tyyszy.com/api.php/provide/vod",
     "group": "normal",
     "enabled": false,
-    "priority": 102,
+    "priority": 103,
     "_comment": "接口解析错误"
   },
   {
@@ -678,7 +690,7 @@
     "baseUrl": "https://tyyszyapi.com/api.php/provide/vod",
     "group": "normal",
     "enabled": false,
-    "priority": 102,
+    "priority": 103,
     "_comment": "接口解析错误"
   },
   {
@@ -687,7 +699,7 @@
     "baseUrl": "http://api.guangsuapi.com/api.php/provide/vod",
     "group": "normal",
     "enabled": false,
-    "priority": 102,
+    "priority": 103,
     "_comment": "接口解析错误"
   },
   {
@@ -696,7 +708,7 @@
     "baseUrl": "https://cj.yayazy.net/api.php/provide/vod",
     "group": "normal",
     "enabled": false,
-    "priority": 102,
+    "priority": 103,
     "_comment": "接口解析错误"
   },
   {
@@ -705,7 +717,7 @@
     "baseUrl": "https://api.yparse.com/api/json",
     "group": "normal",
     "enabled": false,
-    "priority": 102,
+    "priority": 103,
     "_comment": "超时/宕机"
   },
   {
@@ -714,7 +726,7 @@
     "baseUrl": "https://api.niuniuzy.me/api.php/provide/vod",
     "group": "normal",
     "enabled": false,
-    "priority": 102,
+    "priority": 103,
     "_comment": "接口解析错误"
   },
   {
@@ -723,7 +735,7 @@
     "baseUrl": "https://suoniapi.com/api.php/provide/vod",
     "group": "normal",
     "enabled": false,
-    "priority": 102,
+    "priority": 103,
     "_comment": "接口解析错误"
   },
   {
@@ -732,7 +744,7 @@
     "baseUrl": "https://sdzyapi.com/api.php/provide/vod",
     "group": "normal",
     "enabled": false,
-    "priority": 102,
+    "priority": 103,
     "_comment": "接口解析错误"
   },
   {
@@ -741,7 +753,7 @@
     "baseUrl": "https://xsd.sdzyapi.com/api.php/provide/vod",
     "group": "normal",
     "enabled": false,
-    "priority": 102,
+    "priority": 103,
     "_comment": "接口解析错误"
   },
   {
@@ -750,7 +762,7 @@
     "baseUrl": "https://api.guangsuapi.com/api.php/provide/vod",
     "group": "normal",
     "enabled": false,
-    "priority": 107,
+    "priority": 108,
     "_comment": "接口解析错误"
   },
   {
@@ -759,7 +771,7 @@
     "baseUrl": "https://xzybb2.com/api.php/provide/vod",
     "group": "premium",
     "enabled": false,
-    "priority": 108,
+    "priority": 109,
     "_comment": "超时/宕机"
   },
   {
@@ -768,7 +780,7 @@
     "baseUrl": "https://hhzyapi.com/api.php/provide/vod",
     "group": "normal",
     "enabled": false,
-    "priority": 120,
+    "priority": 121,
     "_comment": "接口解析错误"
   },
   {
@@ -777,7 +789,7 @@
     "baseUrl": "https://hhzyapi.com/api.php/provide/vod",
     "group": "normal",
     "enabled": false,
-    "priority": 120,
+    "priority": 121,
     "_comment": "接口解析错误"
   },
   {
