@@ -16,14 +16,6 @@
     "priority": 1
   },
   {
-    "id": "maotai",
-    "name": "茅台资源",
-    "baseUrl": "https://caiji.maotaizy.cc/api.php/provide/vod",
-    "group": "normal",
-    "enabled": true,
-    "priority": 1
-  },
-  {
     "id": "wolong",
     "name": "卧龙资源",
     "baseUrl": "https://wolongzyw.com/api.php/provide/vod",
@@ -96,6 +88,14 @@
     "priority": 1
   },
   {
+    "id": "jinying",
+    "name": "金鹰点播",
+    "baseUrl": "https://jinyingzy.com/api.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 1
+  },
+  {
     "id": "hongniu",
     "name": "红牛资源",
     "baseUrl": "https://www.hongniuzy2.com/api.php/provide/vod",
@@ -131,22 +131,6 @@
     "id": "subo",
     "name": "速博资源",
     "baseUrl": "https://subocaiji.com/api.php/provide/vod",
-    "group": "normal",
-    "enabled": true,
-    "priority": 5
-  },
-  {
-    "id": "jinying",
-    "name": "金鹰点播",
-    "baseUrl": "https://jinyingzy.com/api.php/provide/vod",
-    "group": "normal",
-    "enabled": true,
-    "priority": 5
-  },
-  {
-    "id": "piaoling",
-    "name": "飘零资源",
-    "baseUrl": "https://p2100.net/api.php/provide/vod",
     "group": "normal",
     "enabled": true,
     "priority": 5
