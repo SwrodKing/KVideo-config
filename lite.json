@@ -64,6 +64,14 @@
     "priority": 1
   },
   {
+    "id": "zuida",
+    "name": "最大资源",
+    "baseUrl": "https://api.zuidapi.com/api.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 1
+  },
+  {
     "id": "wujin",
     "name": "无尽资源",
     "baseUrl": "https://api.wujinapi.com/api.php/provide/vod",
@@ -131,14 +139,6 @@
     "id": "maoyan",
     "name": "🎬猫眼资源",
     "baseUrl": "https://api.maoyanapi.top/api.php/provide/vod",
-    "group": "normal",
-    "enabled": true,
-    "priority": 5
-  },
-  {
-    "id": "zuida",
-    "name": "最大资源",
-    "baseUrl": "https://api.zuidapi.com/api.php/provide/vod",
     "group": "normal",
     "enabled": true,
     "priority": 5
