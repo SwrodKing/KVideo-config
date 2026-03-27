@@ -168,14 +168,6 @@
     "priority": 5
   },
   {
-    "id": "uku",
-    "name": "🎬U酷影视",
-    "baseUrl": "https://api.ukuapi88.com/api.php/provide/vod",
-    "group": "normal",
-    "enabled": true,
-    "priority": 5
-  },
-  {
     "id": "ryzy",
     "name": "🎬如意资源",
     "baseUrl": "https://cj.rycjapi.com/api.php/provide/vod",
@@ -264,14 +256,6 @@
     "priority": 5
   },
   {
-    "id": "baofeng2",
-    "name": "暴风APP",
-    "baseUrl": "https://app.bfzyapi.com/api.php/provide/vod",
-    "group": "normal",
-    "enabled": true,
-    "priority": 5
-  },
-  {
     "id": "wujin2",
     "name": "无尽ME",
     "baseUrl": "https://api.wujinapi.me/api.php/provide/vod",
@@ -299,14 +283,6 @@
     "id": "lezi2",
     "name": "乐子HTTP",
     "baseUrl": "http://cj.lziapi.com/api.php/provide/vod",
-    "group": "normal",
-    "enabled": true,
-    "priority": 5
-  },
-  {
-    "id": "uku88",
-    "name": "U酷资源88",
-    "baseUrl": "https://api.ukuapi88.com/api.php/provide/vod",
     "group": "normal",
     "enabled": true,
     "priority": 5
