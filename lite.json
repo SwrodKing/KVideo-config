@@ -40,6 +40,14 @@
     "priority": 5
   },
   {
+    "id": "dytt",
+    "name": "电影天堂",
+    "baseUrl": "http://caiji.dyttzyapi.com/api.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 5
+  },
+  {
     "id": "maoyan",
     "name": "🎬猫眼资源",
     "baseUrl": "https://api.maoyanapi.top/api.php/provide/vod",
@@ -216,6 +224,14 @@
     "priority": 5
   },
   {
+    "id": "feifancj",
+    "name": "非凡采集",
+    "baseUrl": "http://cj.ffzyapi.com/api.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 5
+  },
+  {
     "id": "feifancj2",
     "name": "非凡采集HTTPS",
     "baseUrl": "https://cj.ffzyapi.com/api.php/provide/vod",
@@ -312,14 +328,6 @@
     "priority": 5
   },
   {
-    "id": "dytt",
-    "name": "电影天堂",
-    "baseUrl": "http://caiji.dyttzyapi.com/api.php/provide/vod",
-    "group": "normal",
-    "enabled": true,
-    "priority": 10
-  },
-  {
     "id": "uku",
     "name": "🎬U酷影视",
     "baseUrl": "https://api.ukuapi88.com/api.php/provide/vod",
@@ -336,25 +344,9 @@
     "priority": 10
   },
   {
-    "id": "feifancj",
-    "name": "非凡采集",
-    "baseUrl": "http://cj.ffzyapi.com/api.php/provide/vod",
-    "group": "normal",
-    "enabled": true,
-    "priority": 10
-  },
-  {
     "id": "feifan1",
     "name": "非凡线路1",
     "baseUrl": "http://ffzy1.tv/api.php/provide/vod",
-    "group": "normal",
-    "enabled": true,
-    "priority": 10
-  },
-  {
-    "id": "uku88",
-    "name": "U酷资源88",
-    "baseUrl": "https://api.ukuapi88.com/api.php/provide/vod",
     "group": "normal",
     "enabled": true,
     "priority": 10
