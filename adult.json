@@ -144,6 +144,14 @@
     "priority": 5
   },
   {
+    "id": "uku",
+    "name": "🎬U酷影视",
+    "baseUrl": "https://api.ukuapi88.com/api.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 5
+  },
+  {
     "id": "hongniu",
     "name": "红牛资源",
     "baseUrl": "https://www.hongniuzy2.com/api.php/provide/vod",
@@ -424,6 +432,14 @@
     "priority": 5
   },
   {
+    "id": "uku88",
+    "name": "U酷资源88",
+    "baseUrl": "https://api.ukuapi88.com/api.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 5
+  },
+  {
     "id": "wujincc",
     "name": "无尽CC",
     "baseUrl": "https://api.wujinapi.cc/api.php/provide/vod",
@@ -496,9 +512,9 @@
     "priority": 5
   },
   {
-    "id": "uku",
-    "name": "🎬U酷影视",
-    "baseUrl": "https://api.ukuapi88.com/api.php/provide/vod",
+    "id": "feifan",
+    "name": "非凡资源",
+    "baseUrl": "http://ffzy5.tv/api.php/provide/vod",
     "group": "normal",
     "enabled": true,
     "priority": 10
@@ -568,30 +584,12 @@
     "priority": 10
   },
   {
-    "id": "uku88",
-    "name": "U酷资源88",
-    "baseUrl": "https://api.ukuapi88.com/api.php/provide/vod",
-    "group": "normal",
-    "enabled": false,
-    "priority": 100,
-    "_comment": "超时/宕机"
-  },
-  {
     "id": "baofeng2",
     "name": "暴风APP",
     "baseUrl": "https://app.bfzyapi.com/api.php/provide/vod",
     "group": "normal",
     "enabled": false,
-    "priority": 107,
-    "_comment": "超时/宕机"
-  },
-  {
-    "id": "feifan",
-    "name": "非凡资源",
-    "baseUrl": "http://ffzy5.tv/api.php/provide/vod",
-    "group": "normal",
-    "enabled": false,
-    "priority": 128,
+    "priority": 108,
     "_comment": "超时/宕机"
   },
   {
