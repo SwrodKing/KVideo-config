@@ -358,13 +358,5 @@
     "group": "normal",
     "enabled": true,
     "priority": 10
-  },
-  {
-    "id": "feifan1",
-    "name": "非凡线路1",
-    "baseUrl": "http://ffzy1.tv/api.php/provide/vod",
-    "group": "normal",
-    "enabled": true,
-    "priority": 10
   }
 ]
