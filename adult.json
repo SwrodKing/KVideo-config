@@ -440,14 +440,6 @@
     "priority": 5
   },
   {
-    "id": "feifan1",
-    "name": "非凡线路1",
-    "baseUrl": "http://ffzy1.tv/api.php/provide/vod",
-    "group": "normal",
-    "enabled": true,
-    "priority": 5
-  },
-  {
     "id": "wolong2",
     "name": "卧龙采集",
     "baseUrl": "https://collect.wolongzyw.com/api.php/provide/vod",
@@ -580,8 +572,16 @@
     "name": "金鹰点播",
     "baseUrl": "https://jinyingzy.com/api.php/provide/vod",
     "group": "normal",
+    "enabled": true,
+    "priority": 10
+  },
+  {
+    "id": "feifan1",
+    "name": "非凡线路1",
+    "baseUrl": "http://ffzy1.tv/api.php/provide/vod",
+    "group": "normal",
     "enabled": false,
-    "priority": 105,
+    "priority": 101,
     "_comment": "超时/宕机"
   },
   {
