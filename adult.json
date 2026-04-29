@@ -88,6 +88,14 @@
     "priority": 5
   },
   {
+    "id": "feifan",
+    "name": "非凡资源",
+    "baseUrl": "http://ffzy5.tv/api.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 5
+  },
+  {
     "id": "baofeng",
     "name": "暴风资源",
     "baseUrl": "https://bfzyapi.com/api.php/provide/vod",
@@ -560,14 +568,6 @@
     "priority": 5
   },
   {
-    "id": "feifan",
-    "name": "非凡资源",
-    "baseUrl": "http://ffzy5.tv/api.php/provide/vod",
-    "group": "normal",
-    "enabled": true,
-    "priority": 10
-  },
-  {
     "id": "jinying",
     "name": "金鹰点播",
     "baseUrl": "https://jinyingzy.com/api.php/provide/vod",
@@ -580,9 +580,8 @@
     "name": "非凡线路1",
     "baseUrl": "http://ffzy1.tv/api.php/provide/vod",
     "group": "normal",
-    "enabled": false,
-    "priority": 101,
-    "_comment": "超时/宕机"
+    "enabled": true,
+    "priority": 10
   },
   {
     "id": "wangwang",
