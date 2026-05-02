@@ -56,6 +56,14 @@
     "priority": 1
   },
   {
+    "id": "feifan",
+    "name": "非凡资源",
+    "baseUrl": "http://ffzy5.tv/api.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 1
+  },
+  {
     "id": "baofeng",
     "name": "暴风资源",
     "baseUrl": "https://bfzyapi.com/api.php/provide/vod",
@@ -496,14 +504,6 @@
     "priority": 5
   },
   {
-    "id": "feifan",
-    "name": "非凡资源",
-    "baseUrl": "http://ffzy5.tv/api.php/provide/vod",
-    "group": "normal",
-    "enabled": true,
-    "priority": 5
-  },
-  {
     "id": "subo",
     "name": "速博资源",
     "baseUrl": "https://subocaiji.com/api.php/provide/vod",
@@ -515,14 +515,6 @@
     "id": "hsck",
     "name": "黄色仓库",
     "baseUrl": "https://hsckzy.vip/api.php/provide/vod",
-    "group": "premium",
-    "enabled": true,
-    "priority": 5
-  },
-  {
-    "id": "naixiang",
-    "name": "奶香香",
-    "baseUrl": "https://Naixxzy.com/api.php/provide/vod",
     "group": "premium",
     "enabled": true,
     "priority": 5
@@ -582,6 +574,15 @@
     "group": "normal",
     "enabled": true,
     "priority": 10
+  },
+  {
+    "id": "naixiang",
+    "name": "奶香香",
+    "baseUrl": "https://Naixxzy.com/api.php/provide/vod",
+    "group": "premium",
+    "enabled": false,
+    "priority": 101,
+    "_comment": "超时/宕机"
   },
   {
     "id": "wangwang",

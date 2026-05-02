@@ -56,6 +56,14 @@
     "priority": 1
   },
   {
+    "id": "feifan",
+    "name": "非凡资源",
+    "baseUrl": "http://ffzy5.tv/api.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 1
+  },
+  {
     "id": "baofeng",
     "name": "暴风资源",
     "baseUrl": "https://bfzyapi.com/api.php/provide/vod",
@@ -307,14 +315,6 @@
     "id": "liangzi",
     "name": "🎬量子资源",
     "baseUrl": "https://cj.lzcaiji.com/api.php/provide/vod",
-    "group": "normal",
-    "enabled": true,
-    "priority": 5
-  },
-  {
-    "id": "feifan",
-    "name": "非凡资源",
-    "baseUrl": "http://ffzy5.tv/api.php/provide/vod",
     "group": "normal",
     "enabled": true,
     "priority": 5
