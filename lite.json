@@ -248,14 +248,6 @@
     "priority": 1
   },
   {
-    "id": "wolongcc",
-    "name": "卧龙CC",
-    "baseUrl": "https://collect.wolongzy.cc/api.php/provide/vod",
-    "group": "normal",
-    "enabled": true,
-    "priority": 1
-  },
-  {
     "id": "wujinnet",
     "name": "无尽NET",
     "baseUrl": "https://api.wujinapi.net/api.php/provide/vod",

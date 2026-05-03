@@ -408,14 +408,6 @@
     "priority": 1
   },
   {
-    "id": "wolongcc",
-    "name": "卧龙CC",
-    "baseUrl": "https://collect.wolongzy.cc/api.php/provide/vod",
-    "group": "normal",
-    "enabled": true,
-    "priority": 1
-  },
-  {
     "id": "wujinnet",
     "name": "无尽NET",
     "baseUrl": "https://api.wujinapi.net/api.php/provide/vod",
@@ -520,6 +512,14 @@
     "priority": 5
   },
   {
+    "id": "naixiang",
+    "name": "奶香香",
+    "baseUrl": "https://Naixxzy.com/api.php/provide/vod",
+    "group": "premium",
+    "enabled": true,
+    "priority": 5
+  },
+  {
     "id": "heiliao",
     "name": "🔞黑料资源",
     "baseUrl": "https://www.heiliaozyapi.com/api.php/provide/vod",
@@ -576,10 +576,10 @@
     "priority": 10
   },
   {
-    "id": "naixiang",
-    "name": "奶香香",
-    "baseUrl": "https://Naixxzy.com/api.php/provide/vod",
-    "group": "premium",
+    "id": "wolongcc",
+    "name": "卧龙CC",
+    "baseUrl": "https://collect.wolongzy.cc/api.php/provide/vod",
+    "group": "normal",
     "enabled": false,
     "priority": 101,
     "_comment": "超时/宕机"
