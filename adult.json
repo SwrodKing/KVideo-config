@@ -472,14 +472,6 @@
     "priority": 1
   },
   {
-    "id": "maotai",
-    "name": "茅台资源",
-    "baseUrl": "https://caiji.maotaizy.cc/api.php/provide/vod",
-    "group": "normal",
-    "enabled": true,
-    "priority": 5
-  },
-  {
     "id": "wolong",
     "name": "卧龙资源",
     "baseUrl": "https://wolongzyw.com/api.php/provide/vod",
@@ -560,9 +552,9 @@
     "priority": 5
   },
   {
-    "id": "jinying",
-    "name": "金鹰点播",
-    "baseUrl": "https://jinyingzy.com/api.php/provide/vod",
+    "id": "guangsu",
+    "name": "光速资源",
+    "baseUrl": "https://api.guangsuapi.com/api.php/provide/vod",
     "group": "normal",
     "enabled": true,
     "priority": 10
@@ -592,12 +584,38 @@
     "priority": 10
   },
   {
+    "id": "guangsu2",
+    "name": "光速HTTP",
+    "baseUrl": "http://api.guangsuapi.com/api.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 10
+  },
+  {
+    "id": "maotai",
+    "name": "茅台资源",
+    "baseUrl": "https://caiji.maotaizy.cc/api.php/provide/vod",
+    "group": "normal",
+    "enabled": false,
+    "priority": 101,
+    "_comment": "超时/宕机"
+  },
+  {
+    "id": "jinying",
+    "name": "金鹰点播",
+    "baseUrl": "https://jinyingzy.com/api.php/provide/vod",
+    "group": "normal",
+    "enabled": false,
+    "priority": 101,
+    "_comment": "超时/宕机"
+  },
+  {
     "id": "wolongcc",
     "name": "卧龙CC",
     "baseUrl": "https://collect.wolongzy.cc/api.php/provide/vod",
     "group": "normal",
     "enabled": false,
-    "priority": 104,
+    "priority": 105,
     "_comment": "超时/宕机"
   },
   {
@@ -608,15 +626,6 @@
     "enabled": false,
     "priority": 130,
     "_comment": "搜索无结果"
-  },
-  {
-    "id": "guangsu",
-    "name": "光速资源",
-    "baseUrl": "https://api.guangsuapi.com/api.php/provide/vod",
-    "group": "normal",
-    "enabled": false,
-    "priority": 130,
-    "_comment": "接口解析错误"
   },
   {
     "id": "bdzy",
@@ -721,15 +730,6 @@
     "id": "tianyazy",
     "name": "天涯海角",
     "baseUrl": "https://tyyszyapi.com/api.php/provide/vod",
-    "group": "normal",
-    "enabled": false,
-    "priority": 130,
-    "_comment": "接口解析错误"
-  },
-  {
-    "id": "guangsu2",
-    "name": "光速HTTP",
-    "baseUrl": "http://api.guangsuapi.com/api.php/provide/vod",
     "group": "normal",
     "enabled": false,
     "priority": 130,
