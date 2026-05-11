@@ -128,14 +128,6 @@
     "priority": 1
   },
   {
-    "id": "madou",
-    "name": "91麻豆",
-    "baseUrl": "https://91md.me/api.php/provide/vod",
-    "group": "premium",
-    "enabled": true,
-    "priority": 1
-  },
-  {
     "id": "alvin",
     "name": "🔞--AIvin-",
     "baseUrl": "http://lbapiby.com/api.php/provide/vod",
@@ -448,14 +440,6 @@
     "priority": 1
   },
   {
-    "id": "maotai",
-    "name": "茅台资源",
-    "baseUrl": "https://caiji.maotaizy.cc/api.php/provide/vod",
-    "group": "normal",
-    "enabled": true,
-    "priority": 5
-  },
-  {
     "id": "wolong",
     "name": "卧龙资源",
     "baseUrl": "https://wolongzyw.com/api.php/provide/vod",
@@ -488,6 +472,14 @@
     "priority": 5
   },
   {
+    "id": "uku",
+    "name": "🎬U酷影视",
+    "baseUrl": "https://api.ukuapi88.com/api.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 5
+  },
+  {
     "id": "naixiang",
     "name": "奶香香",
     "baseUrl": "https://Naixxzy.com/api.php/provide/vod",
@@ -508,6 +500,14 @@
     "name": "奥斯卡资源",
     "baseUrl": "https://aosikazy.com/api.php/provide/vod",
     "group": "premium",
+    "enabled": true,
+    "priority": 5
+  },
+  {
+    "id": "youku",
+    "name": "优酷资源",
+    "baseUrl": "https://api.ukuapi.com/api.php/provide/vod",
+    "group": "normal",
     "enabled": true,
     "priority": 5
   },
@@ -539,6 +539,14 @@
     "id": "lezi2",
     "name": "乐子HTTP",
     "baseUrl": "http://cj.lziapi.com/api.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 5
+  },
+  {
+    "id": "uku88",
+    "name": "U酷资源88",
+    "baseUrl": "https://api.ukuapi88.com/api.php/provide/vod",
     "group": "normal",
     "enabled": true,
     "priority": 5
@@ -584,28 +592,19 @@
     "priority": 10
   },
   {
-    "id": "uku",
-    "name": "🎬U酷影视",
-    "baseUrl": "https://api.ukuapi88.com/api.php/provide/vod",
+    "id": "maotai",
+    "name": "茅台资源",
+    "baseUrl": "https://caiji.maotaizy.cc/api.php/provide/vod",
     "group": "normal",
     "enabled": false,
     "priority": 101,
-    "_comment": "超时/宕机"
+    "_comment": "接口解析错误"
   },
   {
-    "id": "youku",
-    "name": "优酷资源",
-    "baseUrl": "https://api.ukuapi.com/api.php/provide/vod",
-    "group": "normal",
-    "enabled": false,
-    "priority": 101,
-    "_comment": "超时/宕机"
-  },
-  {
-    "id": "uku88",
-    "name": "U酷资源88",
-    "baseUrl": "https://api.ukuapi88.com/api.php/provide/vod",
-    "group": "normal",
+    "id": "madou",
+    "name": "91麻豆",
+    "baseUrl": "https://91md.me/api.php/provide/vod",
+    "group": "premium",
     "enabled": false,
     "priority": 101,
     "_comment": "超时/宕机"
@@ -616,7 +615,7 @@
     "baseUrl": "https://collect.wolongzy.cc/api.php/provide/vod",
     "group": "normal",
     "enabled": false,
-    "priority": 108,
+    "priority": 109,
     "_comment": "超时/宕机"
   },
   {
