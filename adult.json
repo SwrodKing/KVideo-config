@@ -432,6 +432,14 @@
     "priority": 1
   },
   {
+    "id": "dbzy",
+    "name": "豆瓣资源",
+    "baseUrl": "https://dbzy.tv/api.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 5
+  },
+  {
     "id": "maotai",
     "name": "茅台资源",
     "baseUrl": "https://caiji.maotaizy.cc/api.php/provide/vod",
@@ -600,21 +608,12 @@
     "priority": 10
   },
   {
-    "id": "dbzy",
-    "name": "豆瓣资源",
-    "baseUrl": "https://dbzy.tv/api.php/provide/vod",
-    "group": "normal",
-    "enabled": false,
-    "priority": 101,
-    "_comment": "超时/宕机"
-  },
-  {
     "id": "wolongcc",
     "name": "卧龙CC",
     "baseUrl": "https://collect.wolongzy.cc/api.php/provide/vod",
     "group": "normal",
     "enabled": false,
-    "priority": 110,
+    "priority": 111,
     "_comment": "超时/宕机"
   },
   {
