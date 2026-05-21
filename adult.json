@@ -136,6 +136,14 @@
     "priority": 5
   },
   {
+    "id": "jisu",
+    "name": "极速资源",
+    "baseUrl": "https://jszyapi.com/api.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 5
+  },
+  {
     "id": "feifan",
     "name": "非凡资源",
     "baseUrl": "http://ffzy5.tv/api.php/provide/vod",
@@ -299,14 +307,6 @@
     "id": "heiliao",
     "name": "🔞黑料资源",
     "baseUrl": "https://www.heiliaozyapi.com/api.php/provide/vod",
-    "group": "premium",
-    "enabled": true,
-    "priority": 5
-  },
-  {
-    "id": "baiwan",
-    "name": "百万资源",
-    "baseUrl": "https://api.bwzyz.com/api.php/provide/vod",
     "group": "premium",
     "enabled": true,
     "priority": 5
@@ -584,13 +584,13 @@
     "priority": 10
   },
   {
-    "id": "jisu",
-    "name": "极速资源",
-    "baseUrl": "https://jszyapi.com/api.php/provide/vod",
-    "group": "normal",
+    "id": "baiwan",
+    "name": "百万资源",
+    "baseUrl": "https://api.bwzyz.com/api.php/provide/vod",
+    "group": "premium",
     "enabled": false,
-    "priority": 102,
-    "_comment": "接口解析错误"
+    "priority": 101,
+    "_comment": "超时/宕机"
   },
   {
     "id": "wolong",
@@ -598,7 +598,7 @@
     "baseUrl": "https://wolongzyw.com/api.php/provide/vod",
     "group": "normal",
     "enabled": false,
-    "priority": 106,
+    "priority": 107,
     "_comment": "超时/宕机"
   },
   {
@@ -607,7 +607,7 @@
     "baseUrl": "https://collect.wolongzyw.com/api.php/provide/vod",
     "group": "normal",
     "enabled": false,
-    "priority": 106,
+    "priority": 107,
     "_comment": "超时/宕机"
   },
   {
@@ -616,7 +616,7 @@
     "baseUrl": "https://collect.wolongzy.cc/api.php/provide/vod",
     "group": "normal",
     "enabled": false,
-    "priority": 118,
+    "priority": 119,
     "_comment": "超时/宕机"
   },
   {
