@@ -16,6 +16,14 @@
     "priority": 1
   },
   {
+    "id": "liangzi",
+    "name": "🎬量子资源",
+    "baseUrl": "https://cj.lzcaiji.com/api.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 1
+  },
+  {
     "id": "360zy",
     "name": "🎬360 资源",
     "baseUrl": "https://360zyzz.com/api.php/provide/vod",
@@ -112,14 +120,6 @@
     "priority": 5
   },
   {
-    "id": "liangzi",
-    "name": "🎬量子资源",
-    "baseUrl": "https://cj.lzcaiji.com/api.php/provide/vod",
-    "group": "normal",
-    "enabled": true,
-    "priority": 5
-  },
-  {
     "id": "jisu",
     "name": "极速资源",
     "baseUrl": "https://jszyapi.com/api.php/provide/vod",
@@ -131,6 +131,14 @@
     "id": "feifan",
     "name": "非凡资源",
     "baseUrl": "http://ffzy5.tv/api.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 5
+  },
+  {
+    "id": "jinying",
+    "name": "金鹰点播",
+    "baseUrl": "https://jinyingzy.com/api.php/provide/vod",
     "group": "normal",
     "enabled": true,
     "priority": 5
@@ -299,14 +307,6 @@
     "id": "maotai",
     "name": "茅台资源",
     "baseUrl": "https://caiji.maotaizy.cc/api.php/provide/vod",
-    "group": "normal",
-    "enabled": true,
-    "priority": 10
-  },
-  {
-    "id": "jinying",
-    "name": "金鹰点播",
-    "baseUrl": "https://jinyingzy.com/api.php/provide/vod",
     "group": "normal",
     "enabled": true,
     "priority": 10

@@ -16,6 +16,14 @@
     "priority": 1
   },
   {
+    "id": "liangzi",
+    "name": "🎬量子资源",
+    "baseUrl": "https://cj.lzcaiji.com/api.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 1
+  },
+  {
     "id": "360zy",
     "name": "🎬360 资源",
     "baseUrl": "https://360zyzz.com/api.php/provide/vod",
@@ -112,14 +120,6 @@
     "priority": 5
   },
   {
-    "id": "liangzi",
-    "name": "🎬量子资源",
-    "baseUrl": "https://cj.lzcaiji.com/api.php/provide/vod",
-    "group": "normal",
-    "enabled": true,
-    "priority": 5
-  },
-  {
     "id": "jisu",
     "name": "极速资源",
     "baseUrl": "https://jszyapi.com/api.php/provide/vod",
@@ -131,6 +131,14 @@
     "id": "feifan",
     "name": "非凡资源",
     "baseUrl": "http://ffzy5.tv/api.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 5
+  },
+  {
+    "id": "jinying",
+    "name": "金鹰点播",
+    "baseUrl": "https://jinyingzy.com/api.php/provide/vod",
     "group": "normal",
     "enabled": true,
     "priority": 5
@@ -512,14 +520,6 @@
     "priority": 10
   },
   {
-    "id": "jinying",
-    "name": "金鹰点播",
-    "baseUrl": "https://jinyingzy.com/api.php/provide/vod",
-    "group": "normal",
-    "enabled": true,
-    "priority": 10
-  },
-  {
     "id": "guangsu",
     "name": "光速资源",
     "baseUrl": "https://api.guangsuapi.com/api.php/provide/vod",
@@ -573,7 +573,7 @@
     "baseUrl": "https://caiji.semaozy.net/inc/apijson_vod.php/provide/vod",
     "group": "premium",
     "enabled": false,
-    "priority": 101,
+    "priority": 102,
     "_comment": "搜索无结果"
   },
   {
@@ -582,7 +582,7 @@
     "baseUrl": "http://api.xinlangapi.com/xinlangapi.php/provide/vod",
     "group": "normal",
     "enabled": false,
-    "priority": 103,
+    "priority": 104,
     "_comment": "接口解析错误"
   },
   {
@@ -591,7 +591,7 @@
     "baseUrl": "https://api.xinlangapi.com/xinlangapi.php/provide/vod",
     "group": "normal",
     "enabled": false,
-    "priority": 103,
+    "priority": 104,
     "_comment": "接口解析错误"
   },
   {
@@ -600,7 +600,7 @@
     "baseUrl": "https://wolongzyw.com/api.php/provide/vod",
     "group": "normal",
     "enabled": false,
-    "priority": 110,
+    "priority": 111,
     "_comment": "接口解析错误"
   },
   {
@@ -609,7 +609,7 @@
     "baseUrl": "https://collect.wolongzyw.com/api.php/provide/vod",
     "group": "normal",
     "enabled": false,
-    "priority": 110,
+    "priority": 111,
     "_comment": "超时/宕机"
   },
   {
@@ -618,7 +618,7 @@
     "baseUrl": "https://collect.wolongzy.cc/api.php/provide/vod",
     "group": "normal",
     "enabled": false,
-    "priority": 122,
+    "priority": 123,
     "_comment": "超时/宕机"
   },
   {
