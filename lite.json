@@ -168,6 +168,14 @@
     "priority": 5
   },
   {
+    "id": "hhzy",
+    "name": "🎬豪华资源",
+    "baseUrl": "https://hhzyapi.com/api.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 5
+  },
+  {
     "id": "sanliuling",
     "name": "360资源",
     "baseUrl": "https://360zy.com/api.php/provide/vod",
@@ -195,6 +203,14 @@
     "id": "lezi",
     "name": "乐子资源",
     "baseUrl": "https://cj.lziapi.com/api.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 5
+  },
+  {
+    "id": "haihua",
+    "name": "海豚资源",
+    "baseUrl": "https://hhzyapi.com/api.php/provide/vod",
     "group": "normal",
     "enabled": true,
     "priority": 5
@@ -320,14 +336,6 @@
     "priority": 10
   },
   {
-    "id": "hhzy",
-    "name": "🎬豪华资源",
-    "baseUrl": "https://hhzyapi.com/api.php/provide/vod",
-    "group": "normal",
-    "enabled": true,
-    "priority": 10
-  },
-  {
     "id": "youku",
     "name": "优酷资源",
     "baseUrl": "https://api.ukuapi.com/api.php/provide/vod",
@@ -336,9 +344,9 @@
     "priority": 10
   },
   {
-    "id": "haihua",
-    "name": "海豚资源",
-    "baseUrl": "https://hhzyapi.com/api.php/provide/vod",
+    "id": "feifan1",
+    "name": "非凡线路1",
+    "baseUrl": "http://ffzy1.tv/api.php/provide/vod",
     "group": "normal",
     "enabled": true,
     "priority": 10
