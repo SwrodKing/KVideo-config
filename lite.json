@@ -336,14 +336,6 @@
     "priority": 10
   },
   {
-    "id": "feifan1",
-    "name": "非凡线路1",
-    "baseUrl": "http://ffzy1.tv/api.php/provide/vod",
-    "group": "normal",
-    "enabled": true,
-    "priority": 10
-  },
-  {
     "id": "xinlang2",
     "name": "新浪HTTPS",
     "baseUrl": "https://api.xinlangapi.com/xinlangapi.php/provide/vod",
