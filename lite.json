@@ -216,6 +216,14 @@
     "priority": 5
   },
   {
+    "id": "moduzy",
+    "name": "魔都影视",
+    "baseUrl": "https://www.moduzy.com/api.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 5
+  },
+  {
     "id": "feifanapi",
     "name": "非凡API",
     "baseUrl": "https://api.ffzyapi.com/api.php/provide/vod",
