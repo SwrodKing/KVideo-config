@@ -392,6 +392,14 @@
     "priority": 5
   },
   {
+    "id": "guangsu",
+    "name": "光速资源",
+    "baseUrl": "https://api.guangsuapi.com/api.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 5
+  },
+  {
     "id": "madou",
     "name": "91麻豆",
     "baseUrl": "https://91md.me/api.php/provide/vod",
@@ -403,6 +411,22 @@
     "id": "lajiao",
     "name": "🔞辣椒资源",
     "baseUrl": "https://apilj.com/api.php/provide/vod",
+    "group": "premium",
+    "enabled": true,
+    "priority": 5
+  },
+  {
+    "id": "shayu",
+    "name": "鲨鱼资源",
+    "baseUrl": "https://shayuapi.com/api.php/provide/vod",
+    "group": "premium",
+    "enabled": true,
+    "priority": 5
+  },
+  {
+    "id": "didi",
+    "name": "🔞滴滴资源",
+    "baseUrl": "https://api.ddapi.cc/api.php/provide/vod",
     "group": "premium",
     "enabled": true,
     "priority": 5
@@ -424,9 +448,33 @@
     "priority": 5
   },
   {
+    "id": "huya",
+    "name": "虎牙资源",
+    "baseUrl": "https://www.huyaapi.com/api.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 5
+  },
+  {
+    "id": "jiangyu",
+    "name": "鲸鱼资源",
+    "baseUrl": "https://jyzyapi.com/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 5
+  },
+  {
     "id": "feifan1",
     "name": "非凡线路1",
     "baseUrl": "http://ffzy1.tv/api.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 5
+  },
+  {
+    "id": "guangsu2",
+    "name": "光速HTTP",
+    "baseUrl": "http://api.guangsuapi.com/api.php/provide/vod",
     "group": "normal",
     "enabled": true,
     "priority": 5
@@ -444,78 +492,27 @@
     "name": "🎬U酷影视",
     "baseUrl": "https://api.ukuapi88.com/api.php/provide/vod",
     "group": "normal",
-    "enabled": true,
-    "priority": 10
+    "enabled": false,
+    "priority": 101,
+    "_comment": "超时/宕机"
   },
   {
     "id": "youku",
     "name": "优酷资源",
     "baseUrl": "https://api.ukuapi.com/api.php/provide/vod",
     "group": "normal",
-    "enabled": true,
-    "priority": 10
+    "enabled": false,
+    "priority": 101,
+    "_comment": "超时/宕机"
   },
   {
     "id": "uku88",
     "name": "U酷资源88",
     "baseUrl": "https://api.ukuapi88.com/api.php/provide/vod",
     "group": "normal",
-    "enabled": true,
-    "priority": 10
-  },
-  {
-    "id": "guangsu",
-    "name": "光速资源",
-    "baseUrl": "https://api.guangsuapi.com/api.php/provide/vod",
-    "group": "normal",
-    "enabled": false,
-    "priority": 101,
-    "_comment": "接口解析错误"
-  },
-  {
-    "id": "shayu",
-    "name": "鲨鱼资源",
-    "baseUrl": "https://shayuapi.com/api.php/provide/vod",
-    "group": "premium",
     "enabled": false,
     "priority": 101,
     "_comment": "超时/宕机"
-  },
-  {
-    "id": "didi",
-    "name": "🔞滴滴资源",
-    "baseUrl": "https://api.ddapi.cc/api.php/provide/vod",
-    "group": "premium",
-    "enabled": false,
-    "priority": 101,
-    "_comment": "超时/宕机"
-  },
-  {
-    "id": "huya",
-    "name": "虎牙资源",
-    "baseUrl": "https://www.huyaapi.com/api.php/provide/vod",
-    "group": "normal",
-    "enabled": false,
-    "priority": 101,
-    "_comment": "接口解析错误"
-  },
-  {
-    "id": "jiangyu",
-    "name": "鲸鱼资源",
-    "baseUrl": "https://jyzyapi.com/provide/vod",
-    "group": "normal",
-    "enabled": false,
-    "priority": 101,
-    "_comment": "接口解析错误"
-  },
-  {
-    "id": "guangsu2",
-    "name": "光速HTTP",
-    "baseUrl": "http://api.guangsuapi.com/api.php/provide/vod",
-    "group": "normal",
-    "enabled": false,
-    "priority": 101,
-    "_comment": "接口解析错误"
   },
   {
     "id": "xinlang",
@@ -523,7 +520,7 @@
     "baseUrl": "http://api.xinlangapi.com/xinlangapi.php/provide/vod",
     "group": "normal",
     "enabled": false,
-    "priority": 104,
+    "priority": 105,
     "_comment": "超时/宕机"
   },
   {
@@ -532,7 +529,7 @@
     "baseUrl": "https://api.xinlangapi.com/xinlangapi.php/provide/vod",
     "group": "normal",
     "enabled": false,
-    "priority": 104,
+    "priority": 105,
     "_comment": "超时/宕机"
   },
   {
@@ -541,7 +538,7 @@
     "baseUrl": "https://p2100.net/api.php/provide/vod",
     "group": "normal",
     "enabled": false,
-    "priority": 109,
+    "priority": 110,
     "_comment": "超时/宕机"
   },
   {
@@ -550,7 +547,7 @@
     "baseUrl": "https://dbzy.tv/api.php/provide/vod",
     "group": "normal",
     "enabled": false,
-    "priority": 124,
+    "priority": 125,
     "_comment": "接口解析错误"
   },
   {
@@ -559,7 +556,7 @@
     "baseUrl": "https://caiji.maotaizy.cc/api.php/provide/vod",
     "group": "normal",
     "enabled": false,
-    "priority": 125,
+    "priority": 126,
     "_comment": "接口解析错误"
   },
   {
