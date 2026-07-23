@@ -326,5 +326,21 @@
     "group": "normal",
     "enabled": true,
     "priority": 10
+  },
+  {
+    "id": "xinlang",
+    "name": "新浪资源",
+    "baseUrl": "http://api.xinlangapi.com/xinlangapi.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 10
+  },
+  {
+    "id": "xinlang2",
+    "name": "新浪HTTPS",
+    "baseUrl": "https://api.xinlangapi.com/xinlangapi.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 10
   }
 ]
