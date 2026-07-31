@@ -424,14 +424,6 @@
     "priority": 5
   },
   {
-    "id": "shayu",
-    "name": "鲨鱼资源",
-    "baseUrl": "https://shayuapi.com/api.php/provide/vod",
-    "group": "premium",
-    "enabled": true,
-    "priority": 5
-  },
-  {
     "id": "didi",
     "name": "🔞滴滴资源",
     "baseUrl": "https://api.ddapi.cc/api.php/provide/vod",
@@ -459,22 +451,6 @@
     "id": "youku",
     "name": "优酷资源",
     "baseUrl": "https://api.ukuapi.com/api.php/provide/vod",
-    "group": "normal",
-    "enabled": true,
-    "priority": 5
-  },
-  {
-    "id": "huya",
-    "name": "虎牙资源",
-    "baseUrl": "https://www.huyaapi.com/api.php/provide/vod",
-    "group": "normal",
-    "enabled": true,
-    "priority": 5
-  },
-  {
-    "id": "jiangyu",
-    "name": "鲸鱼资源",
-    "baseUrl": "https://jyzyapi.com/provide/vod",
     "group": "normal",
     "enabled": true,
     "priority": 5
@@ -528,12 +504,39 @@
     "priority": 10
   },
   {
+    "id": "shayu",
+    "name": "鲨鱼资源",
+    "baseUrl": "https://shayuapi.com/api.php/provide/vod",
+    "group": "premium",
+    "enabled": false,
+    "priority": 101,
+    "_comment": "超时/宕机"
+  },
+  {
+    "id": "huya",
+    "name": "虎牙资源",
+    "baseUrl": "https://www.huyaapi.com/api.php/provide/vod",
+    "group": "normal",
+    "enabled": false,
+    "priority": 101,
+    "_comment": "接口解析错误"
+  },
+  {
+    "id": "jiangyu",
+    "name": "鲸鱼资源",
+    "baseUrl": "https://jyzyapi.com/provide/vod",
+    "group": "normal",
+    "enabled": false,
+    "priority": 101,
+    "_comment": "接口解析错误"
+  },
+  {
     "id": "piaoling",
     "name": "飘零资源",
     "baseUrl": "https://p2100.net/api.php/provide/vod",
     "group": "normal",
     "enabled": false,
-    "priority": 122,
+    "priority": 123,
     "_comment": "超时/宕机"
   },
   {
