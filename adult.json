@@ -120,6 +120,14 @@
     "priority": 1
   },
   {
+    "id": "madou",
+    "name": "91麻豆",
+    "baseUrl": "https://91md.me/api.php/provide/vod",
+    "group": "premium",
+    "enabled": true,
+    "priority": 1
+  },
+  {
     "id": "alvin",
     "name": "🔞--AIvin-",
     "baseUrl": "http://lbapiby.com/api.php/provide/vod",
@@ -384,6 +392,14 @@
     "priority": 1
   },
   {
+    "id": "maoyan",
+    "name": "🎬猫眼资源",
+    "baseUrl": "https://api.maoyanapi.top/api.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 5
+  },
+  {
     "id": "uku",
     "name": "🎬U酷影视",
     "baseUrl": "https://api.ukuapi88.com/api.php/provide/vod",
@@ -396,14 +412,6 @@
     "name": "光速资源",
     "baseUrl": "https://api.guangsuapi.com/api.php/provide/vod",
     "group": "normal",
-    "enabled": true,
-    "priority": 5
-  },
-  {
-    "id": "madou",
-    "name": "91麻豆",
-    "baseUrl": "https://91md.me/api.php/provide/vod",
-    "group": "premium",
     "enabled": true,
     "priority": 5
   },
@@ -451,6 +459,14 @@
     "id": "jiangyu",
     "name": "鲸鱼资源",
     "baseUrl": "https://jyzyapi.com/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 5
+  },
+  {
+    "id": "feifan1",
+    "name": "非凡线路1",
+    "baseUrl": "http://ffzy1.tv/api.php/provide/vod",
     "group": "normal",
     "enabled": true,
     "priority": 5
@@ -512,30 +528,12 @@
     "priority": 10
   },
   {
-    "id": "maoyan",
-    "name": "🎬猫眼资源",
-    "baseUrl": "https://api.maoyanapi.top/api.php/provide/vod",
-    "group": "normal",
-    "enabled": false,
-    "priority": 101,
-    "_comment": "超时/宕机"
-  },
-  {
-    "id": "feifan1",
-    "name": "非凡线路1",
-    "baseUrl": "http://ffzy1.tv/api.php/provide/vod",
-    "group": "normal",
-    "enabled": false,
-    "priority": 101,
-    "_comment": "超时/宕机"
-  },
-  {
     "id": "piaoling",
     "name": "飘零资源",
     "baseUrl": "https://p2100.net/api.php/provide/vod",
     "group": "normal",
     "enabled": false,
-    "priority": 125,
+    "priority": 126,
     "_comment": "超时/宕机"
   },
   {
