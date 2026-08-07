@@ -224,6 +224,22 @@
     "priority": 1
   },
   {
+    "id": "taohua",
+    "name": "🔞桃花资源",
+    "baseUrl": "https://thzy1.me/api.php/provide/vod",
+    "group": "premium",
+    "enabled": true,
+    "priority": 1
+  },
+  {
+    "id": "jingpin",
+    "name": "精品资源",
+    "baseUrl": "https://www.jingpinx.com/api.php/provide/vod",
+    "group": "premium",
+    "enabled": true,
+    "priority": 1
+  },
+  {
     "id": "souav",
     "name": "🔞souavZY",
     "baseUrl": "https://api.souavzyw.net/api.php/provide/vod",
@@ -432,22 +448,6 @@
     "priority": 5
   },
   {
-    "id": "taohua",
-    "name": "🔞桃花资源",
-    "baseUrl": "https://thzy1.me/api.php/provide/vod",
-    "group": "premium",
-    "enabled": true,
-    "priority": 5
-  },
-  {
-    "id": "jingpin",
-    "name": "精品资源",
-    "baseUrl": "https://www.jingpinx.com/api.php/provide/vod",
-    "group": "premium",
-    "enabled": true,
-    "priority": 5
-  },
-  {
     "id": "youku",
     "name": "优酷资源",
     "baseUrl": "https://api.ukuapi.com/api.php/provide/vod",
@@ -533,7 +533,7 @@
     "baseUrl": "https://p2100.net/api.php/provide/vod",
     "group": "normal",
     "enabled": false,
-    "priority": 128,
+    "priority": 129,
     "_comment": "超时/宕机"
   },
   {
