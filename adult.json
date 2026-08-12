@@ -504,6 +504,14 @@
     "priority": 10
   },
   {
+    "id": "shayu",
+    "name": "鲨鱼资源",
+    "baseUrl": "https://shayuapi.com/api.php/provide/vod",
+    "group": "premium",
+    "enabled": true,
+    "priority": 10
+  },
+  {
     "id": "huya",
     "name": "虎牙资源",
     "baseUrl": "https://www.huyaapi.com/api.php/provide/vod",
@@ -526,15 +534,6 @@
     "group": "normal",
     "enabled": true,
     "priority": 10
-  },
-  {
-    "id": "shayu",
-    "name": "鲨鱼资源",
-    "baseUrl": "https://shayuapi.com/api.php/provide/vod",
-    "group": "premium",
-    "enabled": false,
-    "priority": 102,
-    "_comment": "超时/宕机"
   },
   {
     "id": "dbzy",
