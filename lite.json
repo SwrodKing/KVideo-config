@@ -80,6 +80,14 @@
     "priority": 1
   },
   {
+    "id": "uku",
+    "name": "🎬U酷影视",
+    "baseUrl": "https://api.ukuapi88.com/api.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 1
+  },
+  {
     "id": "guangsu",
     "name": "光速资源",
     "baseUrl": "https://api.guangsuapi.com/api.php/provide/vod",
@@ -99,6 +107,14 @@
     "id": "modudm",
     "name": "🎬魔都动漫",
     "baseUrl": "https://caiji.moduapi.cc/api.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 1
+  },
+  {
+    "id": "uku88",
+    "name": "U酷资源88",
+    "baseUrl": "https://api.ukuapi88.com/api.php/provide/vod",
     "group": "normal",
     "enabled": true,
     "priority": 1
@@ -136,14 +152,6 @@
     "priority": 5
   },
   {
-    "id": "uku",
-    "name": "🎬U酷影视",
-    "baseUrl": "https://api.ukuapi88.com/api.php/provide/vod",
-    "group": "normal",
-    "enabled": true,
-    "priority": 5
-  },
-  {
     "id": "hhzy",
     "name": "🎬豪华资源",
     "baseUrl": "https://hhzyapi.com/api.php/provide/vod",
@@ -163,14 +171,6 @@
     "id": "haihua",
     "name": "海豚资源",
     "baseUrl": "https://hhzyapi.com/api.php/provide/vod",
-    "group": "normal",
-    "enabled": true,
-    "priority": 5
-  },
-  {
-    "id": "uku88",
-    "name": "U酷资源88",
-    "baseUrl": "https://api.ukuapi88.com/api.php/provide/vod",
     "group": "normal",
     "enabled": true,
     "priority": 5
