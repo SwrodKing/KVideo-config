@@ -152,6 +152,14 @@
     "priority": 5
   },
   {
+    "id": "xinlang",
+    "name": "新浪资源",
+    "baseUrl": "http://api.xinlangapi.com/xinlangapi.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 5
+  },
+  {
     "id": "hhzy",
     "name": "🎬豪华资源",
     "baseUrl": "https://hhzyapi.com/api.php/provide/vod",
@@ -235,6 +243,14 @@
     "id": "lebo",
     "name": "乐播资源",
     "baseUrl": "https://lbapi9.com/api.php/provide/vod",
+    "group": "premium",
+    "enabled": true,
+    "priority": 5
+  },
+  {
+    "id": "naixiang",
+    "name": "奶香香",
+    "baseUrl": "https://Naixxzy.com/api.php/provide/vod",
     "group": "premium",
     "enabled": true,
     "priority": 5
@@ -328,14 +344,6 @@
     "priority": 5
   },
   {
-    "id": "xinlang",
-    "name": "新浪资源",
-    "baseUrl": "http://api.xinlangapi.com/xinlangapi.php/provide/vod",
-    "group": "normal",
-    "enabled": true,
-    "priority": 10
-  },
-  {
     "id": "jinying",
     "name": "金鹰点播",
     "baseUrl": "https://jinyingzy.com/api.php/provide/vod",
@@ -348,14 +356,6 @@
     "name": "🎬如意资源",
     "baseUrl": "https://cj.rycjapi.com/api.php/provide/vod",
     "group": "normal",
-    "enabled": true,
-    "priority": 10
-  },
-  {
-    "id": "naixiang",
-    "name": "奶香香",
-    "baseUrl": "https://Naixxzy.com/api.php/provide/vod",
-    "group": "premium",
     "enabled": true,
     "priority": 10
   },
