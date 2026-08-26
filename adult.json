@@ -376,6 +376,14 @@
     "priority": 10
   },
   {
+    "id": "shayu",
+    "name": "鲨鱼资源",
+    "baseUrl": "https://shayuapi.com/api.php/provide/vod",
+    "group": "premium",
+    "enabled": true,
+    "priority": 10
+  },
+  {
     "id": "ruyi",
     "name": "如意资源",
     "baseUrl": "https://cj.rycjapi.com/api.php/provide/vod",
@@ -443,6 +451,14 @@
     "id": "feifancj2",
     "name": "非凡采集HTTPS",
     "baseUrl": "https://cj.ffzyapi.com/api.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 10
+  },
+  {
+    "id": "feifan1",
+    "name": "非凡线路1",
+    "baseUrl": "http://ffzy1.tv/api.php/provide/vod",
     "group": "normal",
     "enabled": true,
     "priority": 10
@@ -526,24 +542,6 @@
     "group": "premium",
     "enabled": true,
     "priority": 10
-  },
-  {
-    "id": "shayu",
-    "name": "鲨鱼资源",
-    "baseUrl": "https://shayuapi.com/api.php/provide/vod",
-    "group": "premium",
-    "enabled": false,
-    "priority": 101,
-    "_comment": "超时/宕机"
-  },
-  {
-    "id": "feifan1",
-    "name": "非凡线路1",
-    "baseUrl": "http://ffzy1.tv/api.php/provide/vod",
-    "group": "normal",
-    "enabled": false,
-    "priority": 101,
-    "_comment": "超时/宕机"
   },
   {
     "id": "dbzy",
