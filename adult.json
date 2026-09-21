@@ -40,6 +40,14 @@
     "priority": 1
   },
   {
+    "id": "modu",
+    "name": "魔都资源",
+    "baseUrl": "https://www.mdzyapi.com/api.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 1
+  },
+  {
     "id": "feifan",
     "name": "非凡资源",
     "baseUrl": "http://ffzy5.tv/api.php/provide/vod",
@@ -480,14 +488,6 @@
     "priority": 5
   },
   {
-    "id": "modu",
-    "name": "魔都资源",
-    "baseUrl": "https://www.mdzyapi.com/api.php/provide/vod",
-    "group": "normal",
-    "enabled": true,
-    "priority": 5
-  },
-  {
     "id": "modudm",
     "name": "🎬魔都动漫",
     "baseUrl": "https://caiji.moduapi.cc/api.php/provide/vod",
@@ -541,7 +541,7 @@
     "baseUrl": "https://p2100.net/api.php/provide/vod",
     "group": "normal",
     "enabled": false,
-    "priority": 102,
+    "priority": 103,
     "_comment": "超时/宕机"
   },
   {
@@ -550,7 +550,7 @@
     "baseUrl": "http://lbapiby.com/api.php/provide/vod",
     "group": "premium",
     "enabled": false,
-    "priority": 125,
+    "priority": 126,
     "_comment": "超时/宕机"
   },
   {
@@ -839,6 +839,6 @@
     "group": "premium",
     "enabled": false,
     "priority": 130,
-    "_comment": "搜索无结果"
+    "_comment": "超时/宕机"
   }
 ]
