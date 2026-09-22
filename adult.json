@@ -128,6 +128,14 @@
     "priority": 1
   },
   {
+    "id": "modudm",
+    "name": "🎬魔都动漫",
+    "baseUrl": "https://caiji.moduapi.cc/api.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 1
+  },
+  {
     "id": "ryzy",
     "name": "🎬如意资源",
     "baseUrl": "https://cj.rycjapi.com/api.php/provide/vod",
@@ -440,6 +448,14 @@
     "priority": 1
   },
   {
+    "id": "modudongman",
+    "name": "魔都动漫",
+    "baseUrl": "https://caiji.moduapi.cc/api.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 1
+  },
+  {
     "id": "hongniu3",
     "name": "红牛资源3",
     "baseUrl": "https://www.hongniuzy3.com/api.php/provide/vod",
@@ -488,14 +504,6 @@
     "priority": 5
   },
   {
-    "id": "modudm",
-    "name": "🎬魔都动漫",
-    "baseUrl": "https://caiji.moduapi.cc/api.php/provide/vod",
-    "group": "normal",
-    "enabled": true,
-    "priority": 5
-  },
-  {
     "id": "jkun",
     "name": "jkun",
     "baseUrl": "https://jkunzyapi.com/api.php/provide/vod",
@@ -507,14 +515,6 @@
     "id": "moduzy",
     "name": "魔都影视",
     "baseUrl": "https://www.moduzy.com/api.php/provide/vod",
-    "group": "normal",
-    "enabled": true,
-    "priority": 5
-  },
-  {
-    "id": "modudongman",
-    "name": "魔都动漫",
-    "baseUrl": "https://caiji.moduapi.cc/api.php/provide/vod",
     "group": "normal",
     "enabled": true,
     "priority": 5
@@ -541,7 +541,7 @@
     "baseUrl": "https://p2100.net/api.php/provide/vod",
     "group": "normal",
     "enabled": false,
-    "priority": 103,
+    "priority": 104,
     "_comment": "超时/宕机"
   },
   {
@@ -550,7 +550,7 @@
     "baseUrl": "http://lbapiby.com/api.php/provide/vod",
     "group": "premium",
     "enabled": false,
-    "priority": 126,
+    "priority": 127,
     "_comment": "超时/宕机"
   },
   {
