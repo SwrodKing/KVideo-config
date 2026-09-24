@@ -349,6 +349,6 @@
     "baseUrl": "http://ffzy1.tv/api.php/provide/vod",
     "group": "normal",
     "enabled": true,
-    "priority": 10
+    "priority": 5
   }
 ]
