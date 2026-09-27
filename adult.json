@@ -304,14 +304,6 @@
     "priority": 1
   },
   {
-    "id": "souav",
-    "name": "🔞souavZY",
-    "baseUrl": "https://api.souavzyw.net/api.php/provide/vod",
-    "group": "premium",
-    "enabled": true,
-    "priority": 1
-  },
-  {
     "id": "pgxdy",
     "name": "黄AV资源站",
     "baseUrl": "https://www.pgxdy.com/api/json.php",
@@ -536,12 +528,21 @@
     "priority": 10
   },
   {
+    "id": "souav",
+    "name": "🔞souavZY",
+    "baseUrl": "https://api.souavzyw.net/api.php/provide/vod",
+    "group": "premium",
+    "enabled": false,
+    "priority": 101,
+    "_comment": "超时/宕机"
+  },
+  {
     "id": "piaoling",
     "name": "飘零资源",
     "baseUrl": "https://p2100.net/api.php/provide/vod",
     "group": "normal",
     "enabled": false,
-    "priority": 108,
+    "priority": 109,
     "_comment": "超时/宕机"
   },
   {
