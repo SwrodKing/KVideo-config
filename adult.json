@@ -480,6 +480,22 @@
     "priority": 5
   },
   {
+    "id": "yutu",
+    "name": "玉兔",
+    "baseUrl": "https://yutuzy10.com/api.php/provide/vod",
+    "group": "premium",
+    "enabled": true,
+    "priority": 5
+  },
+  {
+    "id": "lsbzy",
+    "name": "🔞-老色逼-",
+    "baseUrl": "https://apilsbzy1.com/api.php/provide/vod",
+    "group": "premium",
+    "enabled": true,
+    "priority": 5
+  },
+  {
     "id": "souav",
     "name": "🔞souavZY",
     "baseUrl": "https://api.souavzyw.net/api.php/provide/vod",
@@ -504,22 +520,12 @@
     "priority": 5
   },
   {
-    "id": "yutu",
-    "name": "玉兔",
-    "baseUrl": "https://yutuzy10.com/api.php/provide/vod",
-    "group": "premium",
-    "enabled": false,
-    "priority": 101,
-    "_comment": "超时/宕机"
-  },
-  {
-    "id": "lsbzy",
-    "name": "🔞-老色逼-",
+    "id": "lsb",
+    "name": "lsb",
     "baseUrl": "https://apilsbzy1.com/api.php/provide/vod",
     "group": "premium",
-    "enabled": false,
-    "priority": 101,
-    "_comment": "超时/宕机"
+    "enabled": true,
+    "priority": 5
   },
   {
     "id": "shayu",
@@ -527,16 +533,7 @@
     "baseUrl": "https://shayuapi.com/api.php/provide/vod",
     "group": "premium",
     "enabled": false,
-    "priority": 101,
-    "_comment": "超时/宕机"
-  },
-  {
-    "id": "lsb",
-    "name": "lsb",
-    "baseUrl": "https://apilsbzy1.com/api.php/provide/vod",
-    "group": "premium",
-    "enabled": false,
-    "priority": 101,
+    "priority": 102,
     "_comment": "超时/宕机"
   },
   {
@@ -545,7 +542,7 @@
     "baseUrl": "https://p2100.net/api.php/provide/vod",
     "group": "normal",
     "enabled": false,
-    "priority": 123,
+    "priority": 124,
     "_comment": "超时/宕机"
   },
   {
