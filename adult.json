@@ -360,14 +360,6 @@
     "priority": 1
   },
   {
-    "id": "wujin2",
-    "name": "无尽ME",
-    "baseUrl": "https://api.wujinapi.me/api.php/provide/vod",
-    "group": "normal",
-    "enabled": true,
-    "priority": 1
-  },
-  {
     "id": "guangsu2",
     "name": "光速HTTP",
     "baseUrl": "http://api.guangsuapi.com/api.php/provide/vod",
@@ -403,22 +395,6 @@
     "id": "uku88",
     "name": "U酷资源88",
     "baseUrl": "https://api.ukuapi88.com/api.php/provide/vod",
-    "group": "normal",
-    "enabled": true,
-    "priority": 1
-  },
-  {
-    "id": "wujincc",
-    "name": "无尽CC",
-    "baseUrl": "https://api.wujinapi.cc/api.php/provide/vod",
-    "group": "normal",
-    "enabled": true,
-    "priority": 1
-  },
-  {
-    "id": "wujinnet",
-    "name": "无尽NET",
-    "baseUrl": "https://api.wujinapi.net/api.php/provide/vod",
     "group": "normal",
     "enabled": true,
     "priority": 1
@@ -512,6 +488,14 @@
     "priority": 5
   },
   {
+    "id": "feifan1",
+    "name": "非凡线路1",
+    "baseUrl": "http://ffzy1.tv/api.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 5
+  },
+  {
     "id": "lsb",
     "name": "lsb",
     "baseUrl": "https://apilsbzy1.com/api.php/provide/vod",
@@ -520,21 +504,39 @@
     "priority": 5
   },
   {
-    "id": "shayu",
-    "name": "鲨鱼资源",
-    "baseUrl": "https://shayuapi.com/api.php/provide/vod",
-    "group": "premium",
+    "id": "wujin2",
+    "name": "无尽ME",
+    "baseUrl": "https://api.wujinapi.me/api.php/provide/vod",
+    "group": "normal",
     "enabled": false,
     "priority": 101,
     "_comment": "超时/宕机"
   },
   {
-    "id": "feifan1",
-    "name": "非凡线路1",
-    "baseUrl": "http://ffzy1.tv/api.php/provide/vod",
+    "id": "wujincc",
+    "name": "无尽CC",
+    "baseUrl": "https://api.wujinapi.cc/api.php/provide/vod",
     "group": "normal",
     "enabled": false,
     "priority": 101,
+    "_comment": "超时/宕机"
+  },
+  {
+    "id": "wujinnet",
+    "name": "无尽NET",
+    "baseUrl": "https://api.wujinapi.net/api.php/provide/vod",
+    "group": "normal",
+    "enabled": false,
+    "priority": 101,
+    "_comment": "超时/宕机"
+  },
+  {
+    "id": "shayu",
+    "name": "鲨鱼资源",
+    "baseUrl": "https://shayuapi.com/api.php/provide/vod",
+    "group": "premium",
+    "enabled": false,
+    "priority": 102,
     "_comment": "超时/宕机"
   },
   {
@@ -543,7 +545,7 @@
     "baseUrl": "https://p2100.net/api.php/provide/vod",
     "group": "normal",
     "enabled": false,
-    "priority": 126,
+    "priority": 127,
     "_comment": "超时/宕机"
   },
   {
