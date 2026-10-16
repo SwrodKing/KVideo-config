@@ -326,5 +326,29 @@
     "group": "normal",
     "enabled": true,
     "priority": 5
+  },
+  {
+    "id": "wujin2",
+    "name": "无尽ME",
+    "baseUrl": "https://api.wujinapi.me/api.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 5
+  },
+  {
+    "id": "wujincc",
+    "name": "无尽CC",
+    "baseUrl": "https://api.wujinapi.cc/api.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 5
+  },
+  {
+    "id": "wujinnet",
+    "name": "无尽NET",
+    "baseUrl": "https://api.wujinapi.net/api.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 5
   }
 ]
