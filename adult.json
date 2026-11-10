@@ -144,9 +144,25 @@
     "priority": 1
   },
   {
+    "id": "yutu",
+    "name": "玉兔",
+    "baseUrl": "https://yutuzy10.com/api.php/provide/vod",
+    "group": "premium",
+    "enabled": true,
+    "priority": 1
+  },
+  {
     "id": "fanhao",
     "name": "番号资源",
     "baseUrl": "http://fhapi9.com/api.php/provide/vod",
+    "group": "premium",
+    "enabled": true,
+    "priority": 1
+  },
+  {
+    "id": "lsbzy",
+    "name": "🔞-老色逼-",
+    "baseUrl": "https://apilsbzy1.com/api.php/provide/vod",
     "group": "premium",
     "enabled": true,
     "priority": 1
@@ -384,6 +400,14 @@
     "priority": 1
   },
   {
+    "id": "lsb",
+    "name": "lsb",
+    "baseUrl": "https://apilsbzy1.com/api.php/provide/vod",
+    "group": "premium",
+    "enabled": true,
+    "priority": 1
+  },
+  {
     "id": "gdlsp",
     "name": "香奶儿资源站",
     "baseUrl": "https://www.gdlsp.com/api/json.php",
@@ -420,22 +444,6 @@
     "name": "红牛资源",
     "baseUrl": "https://www.hongniuzy2.com/api.php/provide/vod",
     "group": "normal",
-    "enabled": true,
-    "priority": 5
-  },
-  {
-    "id": "yutu",
-    "name": "玉兔",
-    "baseUrl": "https://yutuzy10.com/api.php/provide/vod",
-    "group": "premium",
-    "enabled": true,
-    "priority": 5
-  },
-  {
-    "id": "lsbzy",
-    "name": "🔞-老色逼-",
-    "baseUrl": "https://apilsbzy1.com/api.php/provide/vod",
-    "group": "premium",
     "enabled": true,
     "priority": 5
   },
@@ -488,14 +496,6 @@
     "priority": 5
   },
   {
-    "id": "lsb",
-    "name": "lsb",
-    "baseUrl": "https://apilsbzy1.com/api.php/provide/vod",
-    "group": "premium",
-    "enabled": true,
-    "priority": 5
-  },
-  {
     "id": "xinlang",
     "name": "新浪资源",
     "baseUrl": "http://api.xinlangapi.com/xinlangapi.php/provide/vod",
@@ -541,7 +541,7 @@
     "baseUrl": "https://Naixxzy.com/api.php/provide/vod",
     "group": "premium",
     "enabled": false,
-    "priority": 108,
+    "priority": 109,
     "_comment": "接口解析错误"
   },
   {
