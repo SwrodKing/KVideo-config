@@ -424,6 +424,14 @@
     "priority": 5
   },
   {
+    "id": "shayu",
+    "name": "鲨鱼资源",
+    "baseUrl": "https://shayuapi.com/api.php/provide/vod",
+    "group": "premium",
+    "enabled": true,
+    "priority": 5
+  },
+  {
     "id": "huya",
     "name": "虎牙资源",
     "baseUrl": "https://www.huyaapi.com/api.php/provide/vod",
@@ -512,14 +520,6 @@
     "priority": 10
   },
   {
-    "id": "shayu",
-    "name": "鲨鱼资源",
-    "baseUrl": "https://shayuapi.com/api.php/provide/vod",
-    "group": "premium",
-    "enabled": true,
-    "priority": 10
-  },
-  {
     "id": "baofeng2",
     "name": "暴风APP",
     "baseUrl": "https://app.bfzyapi.com/api.php/provide/vod",
@@ -541,7 +541,7 @@
     "baseUrl": "https://Naixxzy.com/api.php/provide/vod",
     "group": "premium",
     "enabled": false,
-    "priority": 113,
+    "priority": 114,
     "_comment": "接口解析错误"
   },
   {
