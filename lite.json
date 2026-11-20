@@ -192,6 +192,14 @@
     "priority": 5
   },
   {
+    "id": "jisu",
+    "name": "极速资源",
+    "baseUrl": "https://jszyapi.com/api.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 5
+  },
+  {
     "id": "modu",
     "name": "魔都资源",
     "baseUrl": "https://www.mdzyapi.com/api.php/provide/vod",
@@ -216,6 +224,14 @@
     "priority": 5
   },
   {
+    "id": "jinying",
+    "name": "金鹰点播",
+    "baseUrl": "https://jinyingzy.com/api.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 5
+  },
+  {
     "id": "hongniu",
     "name": "红牛资源",
     "baseUrl": "https://www.hongniuzy2.com/api.php/provide/vod",
@@ -232,17 +248,25 @@
     "priority": 5
   },
   {
-    "id": "moduzy",
-    "name": "魔都影视",
-    "baseUrl": "https://www.moduzy.com/api.php/provide/vod",
+    "id": "huya",
+    "name": "虎牙资源",
+    "baseUrl": "https://www.huyaapi.com/api.php/provide/vod",
     "group": "normal",
     "enabled": true,
     "priority": 5
   },
   {
-    "id": "feifan1",
-    "name": "非凡线路1",
-    "baseUrl": "http://ffzy1.tv/api.php/provide/vod",
+    "id": "jiangyu",
+    "name": "鲸鱼资源",
+    "baseUrl": "https://jyzyapi.com/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 5
+  },
+  {
+    "id": "moduzy",
+    "name": "魔都影视",
+    "baseUrl": "https://www.moduzy.com/api.php/provide/vod",
     "group": "normal",
     "enabled": true,
     "priority": 5
@@ -296,9 +320,25 @@
     "priority": 10
   },
   {
+    "id": "guangsu",
+    "name": "光速资源",
+    "baseUrl": "https://api.guangsuapi.com/api.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 10
+  },
+  {
     "id": "baofeng2",
     "name": "暴风APP",
     "baseUrl": "https://app.bfzyapi.com/api.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 10
+  },
+  {
+    "id": "guangsu2",
+    "name": "光速HTTP",
+    "baseUrl": "http://api.guangsuapi.com/api.php/provide/vod",
     "group": "normal",
     "enabled": true,
     "priority": 10
