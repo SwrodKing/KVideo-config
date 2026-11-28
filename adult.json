@@ -56,6 +56,14 @@
     "priority": 1
   },
   {
+    "id": "wujin",
+    "name": "无尽资源",
+    "baseUrl": "https://api.wujinapi.com/api.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 1
+  },
+  {
     "id": "xinlang",
     "name": "新浪资源",
     "baseUrl": "http://api.xinlangapi.com/xinlangapi.php/provide/vod",
@@ -328,6 +336,22 @@
     "priority": 1
   },
   {
+    "id": "wujincc",
+    "name": "无尽CC",
+    "baseUrl": "https://api.wujinapi.cc/api.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 1
+  },
+  {
+    "id": "wujinnet",
+    "name": "无尽NET",
+    "baseUrl": "https://api.wujinapi.net/api.php/provide/vod",
+    "group": "normal",
+    "enabled": true,
+    "priority": 1
+  },
+  {
     "id": "hongniu3",
     "name": "红牛资源3",
     "baseUrl": "https://www.hongniuzy3.com/api.php/provide/vod",
@@ -376,14 +400,6 @@
     "priority": 5
   },
   {
-    "id": "wujin",
-    "name": "无尽资源",
-    "baseUrl": "https://api.wujinapi.com/api.php/provide/vod",
-    "group": "normal",
-    "enabled": true,
-    "priority": 5
-  },
-  {
     "id": "jinying",
     "name": "金鹰点播",
     "baseUrl": "https://jinyingzy.com/api.php/provide/vod",
@@ -404,6 +420,30 @@
     "name": "🎬魔都动漫",
     "baseUrl": "https://caiji.moduapi.cc/api.php/provide/vod",
     "group": "normal",
+    "enabled": true,
+    "priority": 5
+  },
+  {
+    "id": "yutu",
+    "name": "玉兔",
+    "baseUrl": "https://yutuzy10.com/api.php/provide/vod",
+    "group": "premium",
+    "enabled": true,
+    "priority": 5
+  },
+  {
+    "id": "lsbzy",
+    "name": "🔞-老色逼-",
+    "baseUrl": "https://apilsbzy1.com/api.php/provide/vod",
+    "group": "premium",
+    "enabled": true,
+    "priority": 5
+  },
+  {
+    "id": "hsck",
+    "name": "黄色仓库",
+    "baseUrl": "https://hsckzy.vip/api.php/provide/vod",
+    "group": "premium",
     "enabled": true,
     "priority": 5
   },
@@ -440,22 +480,6 @@
     "priority": 5
   },
   {
-    "id": "wujincc",
-    "name": "无尽CC",
-    "baseUrl": "https://api.wujinapi.cc/api.php/provide/vod",
-    "group": "normal",
-    "enabled": true,
-    "priority": 5
-  },
-  {
-    "id": "wujinnet",
-    "name": "无尽NET",
-    "baseUrl": "https://api.wujinapi.net/api.php/provide/vod",
-    "group": "normal",
-    "enabled": true,
-    "priority": 5
-  },
-  {
     "id": "zuidame",
     "name": "最大点播",
     "baseUrl": "http://zuidazy.me/api.php/provide/vod",
@@ -468,6 +492,14 @@
     "name": "魔都动漫",
     "baseUrl": "https://caiji.moduapi.cc/api.php/provide/vod",
     "group": "normal",
+    "enabled": true,
+    "priority": 5
+  },
+  {
+    "id": "lsb",
+    "name": "lsb",
+    "baseUrl": "https://apilsbzy1.com/api.php/provide/vod",
+    "group": "premium",
     "enabled": true,
     "priority": 5
   },
@@ -504,48 +536,12 @@
     "priority": 10
   },
   {
-    "id": "yutu",
-    "name": "玉兔",
-    "baseUrl": "https://yutuzy10.com/api.php/provide/vod",
-    "group": "premium",
-    "enabled": false,
-    "priority": 101,
-    "_comment": "超时/宕机"
-  },
-  {
-    "id": "lsbzy",
-    "name": "🔞-老色逼-",
-    "baseUrl": "https://apilsbzy1.com/api.php/provide/vod",
-    "group": "premium",
-    "enabled": false,
-    "priority": 101,
-    "_comment": "超时/宕机"
-  },
-  {
-    "id": "lsb",
-    "name": "lsb",
-    "baseUrl": "https://apilsbzy1.com/api.php/provide/vod",
-    "group": "premium",
-    "enabled": false,
-    "priority": 101,
-    "_comment": "超时/宕机"
-  },
-  {
-    "id": "hsck",
-    "name": "黄色仓库",
-    "baseUrl": "https://hsckzy.vip/api.php/provide/vod",
-    "group": "premium",
-    "enabled": false,
-    "priority": 102,
-    "_comment": "超时/宕机"
-  },
-  {
     "id": "naixiang",
     "name": "奶香香",
     "baseUrl": "https://Naixxzy.com/api.php/provide/vod",
     "group": "premium",
     "enabled": false,
-    "priority": 125,
+    "priority": 126,
     "_comment": "接口解析错误"
   },
   {
